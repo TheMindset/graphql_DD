@@ -5,8 +5,11 @@ const bodyParser = require('koa-bodyparser')
 const respond = require('koa-respond')
 const graphqlHTTP = require('koa-graphql')
 const schema = require('./schema')
+const iniDB = require('../database/dbConnect')
 
 const app = new Koa()
+
+iniDB()
 
 app.use(bodyParser())
 app.use(respond())
