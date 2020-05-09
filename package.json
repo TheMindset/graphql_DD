@@ -1,0 +1,28 @@
+{
+  "name": "graphql_dd",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "TheMindSet",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev-start": "nodemon ./bin/www",
+    "test": "jest --forceExit --coverage ",
+    "oneTest": "jest --forceExit --coverage -t"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "graphql": "^14.6.0",
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-graphql": "^0.8.0",
+    "koa-mount": "^4.0.0",
+    "koa-respond": "^2.1.0",
+    "path": "^0.12.7",
+    "runkoa": "^1.5.9"
+  },
+  "devDependencies": {
+    "babel-jest": "^25.1.0",
+    "supertest": "^4.0.2"
+  }
+}
