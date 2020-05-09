@@ -4,7 +4,7 @@ const mount = require('koa-mount')
 const bodyParser = require('koa-bodyparser')
 const respond = require('koa-respond')
 const graphqlHTTP = require('koa-graphql')
-const schema = require('./graphql/schema')
+const schema = require('./schema')
 
 const app = new Koa()
 
